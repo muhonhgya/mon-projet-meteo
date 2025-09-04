@@ -2,11 +2,12 @@
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import requests
+import os
 
 app = Flask(__name__, static_folder=".")
 CORS(app)  # <-- active CORS
 
-API_KEY = "f5b54e2d46494c7790ecbaa26080a871"
+API_KEY = os.getenv("API_KEY")
 
 @app.route("/")
 def index():
