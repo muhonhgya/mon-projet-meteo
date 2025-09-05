@@ -11,7 +11,7 @@ API_KEY = os.getenv("API_KEY")
 
 @app.route("/")
 def index():
-    return send_from_directory(".", "Affiche météo.html")
+    return send_from_directory(".", "index.html")
 
 @app.route("/weather")
 def weather():
