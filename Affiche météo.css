@@ -51,3 +51,106 @@ button:hover{
     color: red;
     margin-top: 15px;
 }
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    width: 350px;
+    border-radius: 12px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background: #4cafef;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: #2b7ddf;
+}
+
+.weather {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.weather i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.error {
+    color: red;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+/* 📱 Tablettes */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .weather {
+        font-size: 16px;
+    }
+}
+
+/* 📱 Smartphones */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .weather {
+        font-size: 14px;
+    }
+}
