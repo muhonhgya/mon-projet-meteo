@@ -2,7 +2,8 @@
 async function getWeather() {
     const city = document.getElementById("city").value;
     
-    const url = `https://mini-meteo.onrender.com/weather?city=${city}`;
+    const url = `https://mon-projet-meteo-1.onrender.com/weather?city=${city}`;
+    
 
 
     const weatherDiv = document.getElementById("weather");
